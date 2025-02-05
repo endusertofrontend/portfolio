@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif; /* a font family I like */
+    background: radial-gradient(circle, #1a237e, #0f52ba, #08152e); /* saphire with gradient background color */
+    color: #00FFFF; /* light cyan color */ 
+}
+
+a:visited {
+    color: rgba(251, 244, 35, 0.174);
+}
+
+.content h2 {
+  text-align: center;
+}
+
+dl dt {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1025px) { /* Styles for desktops */
+  body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem; 
+  }
+
+  nav {
+    grid-row: 1; 
+    grid-column: 2/3;
+  }
+
+  main {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    grid-row: 2; 
+    grid-column: 1/3; 
+  }
+
+  nav ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: start;
+  }
+
+  .content {
+    display: flex;
+    gap: 1.5rem;
+    /* text-align: center; */
+  }
+  .content h2 {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 80px;
+     max-height: 250px;
+     max-width: 250px;
+  }
+
+  table, th, td {
+    border: 1px solid;
+  }
+
+  /* drop down CSS for Nav */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    padding: 15px; 
+    cursor: pointer;
+    background-color: #ff5622c4;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    
+  }
+
+  .list-items li {
+    margin: 2.5px;
+    
+  }
+
+  .drop-down .list-items {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    padding: 0;
+    list-style: none;
+  }
+
+  .drop-down .list-items li {
+    padding: 10px; 
+  }
+
+  .drop-down .list-items li:hover {
+    background-color: #B0BEC5;
+  }
+
+  .drop-down:hover .list-items {
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+    /* Styles for mobile screens */
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: grid; 
+    }
+
+    .content .profile {
+      grid-row: 1;
+    }
+    .content .bio {
+      grid-row: 2;
+    }
+
+    .content .profile {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      padding: 10px; 
+
+    }
+
+
+    img {
+      max-width: 55%;
+      height: auto;
+      display: block;
+      border-radius:  100%;
+    }
+
+    table, th, td {
+      border: 1px solid;
+    }
+
+    /* mobile drop down nav */
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    /* Styles for tablets */
+}
+
