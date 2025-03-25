@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Working with Grids</title>
+   <meta charset="utf-8">
+   <meta name="description" content="working with grids in CNIT 132A">
+   <style>
+	  h1 { 
+		text-align:center;
+		font-style:italic;
+	  }
+
+      .page-layout {
+         display: grid; 
+		 /* 1fr ensure the height and width are all the same for each section container */
+         grid-template-columns: 1fr 1fr; 
+         grid-template-rows: 1fr 1fr; 
+		
+		 /* this will affect the child .news, .link. .search .messages height*/
+		 height: 70vh; 
+      }
+	  .news, .links, .search, .messages {
+	     text-align: center;
+		 font-weight: bold;
+	  }
+	  .news {
+	     background-color: cyan;
+		 grid-row: 2 / 3; 
+		 grid-column: 2 / 3;
+	  }
+	  .links {
+	     background-color: rgb(210, 185, 139);
+		 grid-row: 1 / 2; 
+		 grid-column: 2 / 3; 
+	  }
+	  .search {
+	     background-color: rgb(246, 206, 246);
+		 grid-row: 1 / 2; 
+		 grid-column: 1 / 2;
+		
+	  }
+	  .messages {
+	     background-color: rgb(241, 150, 150);
+		 grid-row: 2 /3; 
+		 grid-column: 1 / 2; 
+	  }
+
+   </style>
+</head>
+<body>
+	<h1>Company Template</h1>
+<main class="page-layout">
+  <section class="news">
+	<h2>News</h2>
+	<p>Here we will present the latest news for you</p>
+  </section>
+  <section class="links">
+	<h2>Interesting Links</h2>
+	<p>Here you will see some interesting links</p>
+  </section>
+  <section class="search">
+	<h2>Search</h2>
+	<p>Here you will see some search functionality</p>
+  </section>
+  <section class="messages">
+	<h2>Messages</h2>
+	<p>Here you will see the latest messages received from our customers</p>
+  </section>
+</main>
+</body>
+</html>

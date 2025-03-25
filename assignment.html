@@ -9,13 +9,17 @@
     <title>CNIT 132A Assignments</title>
     <style>
         body {
-        font-family: Arial, sans-serif;
-        background: radial-gradient(circle, #1a237e, #0f52ba, #08152e); /* saphire with gradient background color */
-        color: black; /* light cyan color */
+            padding: 1rem;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle, #1a237e, #0f52ba, #08152e); /* saphire with gradient background color */
+            color: black; /* light cyan color */
+        }
+
+        main {
         display: flex;
         justify-content: center;
         align-items: center;
-    height: 100vh;
+        height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -34,19 +38,96 @@
             margin: 10px 0;
             border-radius: 5px;
         }
+
+
+ /* ----------Nav CSS ----------------*/
+        nav ul {
+        display: flex;
+        gap: 4rem;
+        justify-content: end;
+        }
+
+        nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+    nav ul li {
+        position: relative;
+        padding: 15px; 
+        cursor: pointer;
+        background-color: #ff5622c4;
+        font-weight: bold;
+        color: white;
+        border-radius: 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        
+    }
+
+    .list-items li {
+        margin: 2.5px;
+        
+    }
+
+    .drop-down .list-items {
+        display: none;
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        padding: 0;
+        list-style: none;
+    }
+
+    .drop-down .list-items li {
+        padding: 10px; 
+    }
+
+    .drop-down .list-items li:hover {
+        background-color: #B0BEC5;
+    }
+
+    .drop-down:hover .list-items {
+        display: block;
+    }
+
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="drop-down"><a href="assignment.html">Projects</a>
+                <ul class="list-items">
+                    <li><a href="hw3.html" target="_blank" rel="noopener noreferrer">Assignment3</a></li>
+                    <li><a href="homework4/hw4.html" target="_blank" rel="noopener noreferrer">Assignment4</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
     <div class="container">
         <h1>CNIT 132A assignments</h1>
         <div class="assignment">
-            <h3>Assignment 1</h3>
-            <p>Pending.. Will update</p>
+            <h3><a href="hw3.html">Assignment 3</a></h3>
+            <p>Homework 3 is about compressing an image to reduce page load time. There is a significant speed increase after an image is compressed, although there is some image quality loss.</p>
         </div>
         <div class="assignment">
-            <h3>Assignment 2</h3>
-            <p>Pending... Will update</p>
+            <h3>Assignment 4</h3>
+            <p>Homework 4 requires the use of work files hw4part1.html, hw4part2.html, and fairytale.html. Hw4part1.html has you rely on grid to modify the page. Hw4part2.html has you rely on flexbox to modify the page layout. Finally, fairytale.html has you work with column-count and column-rule. All three are methods for outlining a webpage. The combination of grid and flexbox is most useful. The use of column-count and column-rule is more of a case-by-case use. </p>
+            <ul>
+                <li><a href="homework4/hw4.html">hw4part1</a></li>
+                <li><a href="homework4/hw4part2.html">hw4part2</a></li>
+                <li><a href="homework4/fairytale.html">fairytale</a></li>
+            </ul>
         </div>
     </div>
+
+    </main>
 </body>
 </html>

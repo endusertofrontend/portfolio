@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4 part two</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            display: flex; 
+            width: 100%;
+        }
+
+        .content div {
+            flex: 1;
+        }
+
+        .aside {
+            text-align: center;
+        }
+
+        /*----------------- CSS to add background-colors -------------------------*/
+        footer {
+            background-color: rgba(9, 185, 9, 0.457);
+            width: 100%;
+            text-align: center;
+        }
+
+        .nameCompany {
+            background-color: rgba(215, 42, 23, 0.526);
+            width: 100%;
+            text-align: center;
+        }
+
+        #one {
+            background-color: rgba(255, 255, 0, 0.424);
+            width: 100%;
+
+        }
+
+        .two {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+
+        .three {
+            background-color: rgba(176, 12, 176, 0.581);
+            color: blue;
+            font-weight: 900;
+            padding: 10px;
+        }
+
+        #four {
+            background-color: pink;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FLexBox Assignment</h1>
+    <main class="flex-container">
+        <div class="nameCompany">
+            <h2>Name of Company</h2>
+        </div>
+        <div class="content">
+            <div class="aside" id="one">
+                <h3>This is the aside 1</h3>
+            </div>
+            <div class="two">
+                <p>This is the main article of my page! This is the main content of the page. In a 3-olcumn layout, it should be shown in the middle between the aside 1 and aside.</p>
+            </div>
+            <div class="three">
+                <p>This column was created to have some content as a challenge to adapt the old 3-column layout to a 4-column layout.</p>
+            </div>
+            <div class="aside" id="four">
+                <h3>This is the aside 2</h3>
+            </div>
+        </div>
+
+        <footer>
+            <h3>This is the foooter <br> Copyright &#169 2017</h3>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

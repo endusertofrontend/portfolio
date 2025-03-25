@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With Images</title>
+    <style>
+        /* -----Nav CSS */
+    nav ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: end;
+    }
+
+    nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+  nav ul li {
+    position: relative;
+    padding: 15px; 
+    cursor: pointer;
+    background-color: #ff5622c4;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    
+  }
+
+  .list-items li {
+    margin: 2.5px;
+    
+  }
+
+  .drop-down .list-items {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    padding: 0;
+    list-style: none;
+  }
+
+  .drop-down .list-items li {
+    padding: 10px; 
+  }
+
+  .drop-down .list-items li:hover {
+    background-color: #B0BEC5;
+  }
+
+  .drop-down:hover .list-items {
+    display: block;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .images {
+    display: flex;
+  }
+
+  .images figure {
+    flex: 1; /* Ensures each box takes up the same amount of space */
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="drop-down"><a href="assignment.html">Projects</a>
+                <ul class="list-items">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Homework 3</a></li>
+                    <li><a href="homework4/hw4.html" target="_blank" rel="noopener noreferrer">Homework 4</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Working with images</h1>
+    <div class="images">
+        <figure>
+            <img src="images/landscape.jpg" alt="Original Landscape" style="width:100%">
+            <figcaption>Width - 1920, Height - 1440, Bytes - 557KB</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/landscapeCompressed.jpg" alt="Optimized Landscape" style="width:100%">
+            <figcaption>Width - 1732, Height - 1299, Bytes - 195kb</figcaption>
+        </figure>
+    </div>
+    <section>
+        <h2>Purpose of comparison</h2>
+        <p>To optimize the image, I used <a href="https://jpeg-optimizer.com/?reset">JPEG-optimizer</a> to compress the file while maintaining good quality. The original image was 1920x1440 pixels and 557KB. After compression, the optimized image size was 1732 x 1299 pixels and 195KB. Using Chrome Developer’s Network tool, I simulated a 3G environment. It made sure to disable cache. When the page was reloaded, the unoptimized image took 17.72 seconds to fully load. The compressed image took 10.29 seconds to fully load. This is quite an improvement. Optimization reduces the page load time, while preserving image quality. I can tell the image lost some quality, but loading time being cut in half is such a great benefit. This will overall help improve a website’s performance.</p>
+    </section>
+</body>
+</html>
