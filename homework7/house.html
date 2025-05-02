@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+    
+        }
+        img {
+            float: left;
+            shape-outside: url(house.png);
+        }
+
+        .heading-container {
+            container-type: inline-size;
+            
+        }
+
+        @container (max-width: 600px) {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heaging-container">
+        <h1>Shaping Content Around Image:</h1>
+    </div>
+ 
+    <main>
+        <h2>Shaping around the house</h2>
+        <img src="house.png" alt="silhouette of a house">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quo veritatis tempora nulla dolorum maiores maxime id ad commodi voluptates, inventore, cum ipsum consequuntur quod vero consectetur qui blanditiis voluptate debitis dicta nam officiis dolor quas mollitia. Iste, facilis eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam quae nostrum cum cupiditate eos omnis quo animi dicta maiores, facere dolores at temporibus eaque officia rem ipsum neque harum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum officiis vero delectus repudiandae magni doloremque? Laboriosam quaerat labore cupiditate amet corporis id voluptates provident, et itaque, autem porro, doloremque repellat eligendi blanditiis ipsa tenetur veritatis odit quasi consequatur quos?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum molestiae, asperiores eligendi, voluptas hic sed ratione dolorem tempora illo vitae consequatur eos accusamus quos tenetur aut culpa! Aliquid, esse.</p>
+    </main>
+    
+</body>
+</html>
