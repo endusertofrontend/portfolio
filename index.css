@@ -50,10 +50,15 @@ dl dt {
     text-align: center;
   }
 
-  img {
+  .profile_picture {
     border-radius: 80px;
-     max-height: 250px;
-     max-width: 250px;
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .laptop {
+    max-width: 300px; 
+    height: auto;
   }
 
   table, th, td {

@@ -1,0 +1,64 @@
+/* ============== Reset styles =========== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* =============== Header section ================= */
+header {
+  background-color: #004466;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* ================= Main content ===================  */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+  font-size: 1.1rem;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 1rem;
+}
+
+/* == link == */
+a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================ Footer ========== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
